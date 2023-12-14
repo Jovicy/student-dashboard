@@ -8,15 +8,15 @@ import { summaryReport, noticeBoard, courses } from "../../data/database";
 
 const Content = () => {
   return (
-    <div className="flex justify-between gap-2">
-      <div className="bg-transparent w-3/4 h-full p-2 flex flex-col gap-10">
+    <div className="flex justify-between flex-col md:flex-row gap-2">
+      <div className="bg-transparent md:w-3/4 h-full p-2 flex flex-col gap-10">
         <div className="flex flex-col gap-2">
           <div>
             <h1 className="font-bold text-dark-teal text-lg">Summary report</h1>
           </div>
-          <div className="flex flex-wrap items-center justify-between gap-3 w-full">
+          <div className="flex md:flex-nowrap flex-wrap items-center justify-between gap-3 w-full">
           {summaryReport.map((report, index) => (
-            <div key={index} className="bg-white border-primary-teal border rounded-md flex items-center p-4 gap-2">
+            <div key={index} className="bg-white border-primary-teal border rounded-md flex items-center p-4 gap-2 w-full">
               <div className="bg-icon-bg p-2 rounded-md w-10 h-10 flex justify-center items-center">
                 <img src={report.avatar} alt="icon" />
               </div>
@@ -58,7 +58,7 @@ const Content = () => {
           </div>
           <div className="flex flex-wrap w-full justify-between gap-5">
           {courses.map((courses, index) => (
-            <div key={index} className="flex flex-col gap-3 w-80 bg-white rounded-md border-primary-teal border p-3">
+            <div key={index} className="flex flex-col gap-3 md:w-80 w-full bg-white rounded-md border-primary-teal border p-3">
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
                   <div className={`rounded-full h-10 w-10 ${courses.boxColor}`}></div>
@@ -84,7 +84,7 @@ const Content = () => {
         </div>
       </div>
 
-      <div className="bg-white w-1/4 h-full rounded-md p-4 flex flex-col gap-5">
+      <div className="bg-white md:w-1/4 w-full h-full rounded-md p-4 flex flex-col gap-5">
         <div className="flex items-center justify-between w-full">
           <div>
             <h1 className="font-bold text-dark-teal text-lg">My profile</h1>

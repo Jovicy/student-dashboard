@@ -22,6 +22,11 @@ export default {
       'icon-bg': '#d3e5fe',
       'content-bg': '#f5f6f7',
     },
+    screens: {
+      xs: "480px",
+      sm: "768px",
+      md: "1000px"
+    },
     extend: {},
   },
   plugins: [],
