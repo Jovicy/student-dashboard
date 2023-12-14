@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="app flex w-full">
       {/* Fixed Sidebar Wrapper */}
-      <div className="fixed h-full">
+      <div className="fixed h-screen">
         <Sidebar />
       </div>
       
