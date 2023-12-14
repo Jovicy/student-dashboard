@@ -27,7 +27,12 @@ export default {
       sm: "768px",
       md: "1000px"
     },
-    extend: {},
+    extend: {
+      width: {
+        '15': '15%',
+        '85': '85%',
+      }
+    },
   },
   plugins: [],
 }

@@ -11,13 +11,13 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-full md:h-screen h-screen bg-white p-5 flex flex-col justify-between md:gap-7 gap-1">
+    <div className="w-full md:h-screen h-screen bg-white p-5 flex flex-col md:justify-between md:gap-7 gap-5">
       <div className="flex flex-col md:gap-5 border-white border-b-grey border-2 border-dashed pb-6 w-full">
         <div className="flex items-center gap-5 md:justify-start justify-center">
           <img src={Logo} alt="logo" className="h-10 w-10 rounded-md" />
           <h1 className="text-2xl font-bold md:block hidden">Eazischool</h1>
         </div>
-        <div className="flex flex-col md:gap-3">
+        <div className="flex flex-col md:gap-3 md:text-start text-center">
           <div className="flex md:flex-row flex-col p-3 items-center gap-2 hover:bg-primary-teal text-grey hover:text-dark-teal rounded-md cursor-pointer ">
             <SquaresPlusIcon className="md:h-7 md:w-7 h-5 w-5" />
             <p className="font-normal md:font-bold md:text-sm text-xs capitalize">Dashboard</p>
