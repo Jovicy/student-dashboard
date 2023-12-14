@@ -11,7 +11,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-full md:h-screen h-screen bg-white p-5 flex flex-col md:justify-between gap-7">
+    <div className="w-full md:h-screen h-screen bg-white md:p-5 py-5 px-0 flex flex-col md:justify-between gap-7">
       <div className="flex flex-col gap-5 border-white border-b-grey border-2 border-dashed pb-6 w-full">
         <div className="flex items-center gap-5 md:justify-start justify-center">
           <img src={Logo} alt="logo" className="h-10 w-10 rounded-md" />
